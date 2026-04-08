@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Center */
+.container {
+    margin-top: 120px;
+}
+
+/* Title */
+.title {
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+/* Button PRO */
+.btn {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #00f2ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00f2ff;
+}
+
+/* Hover */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #00f2ff;
+}
+
+/* Click animation */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Text animation */
+#text {
+    font-size: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+@keyframes shake {
+    0% { transform: translate(2px, 2px); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0, 0); }
+}
